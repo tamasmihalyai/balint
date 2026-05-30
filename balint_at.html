@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graz Höhenarbeiten | Höhenarbeiten in Graz und Umgebung</title>
+  <meta name="description" content="Professionelle Höhenarbeiten und Seilzugangstechnik für Fassaden, Dächer, Dachrinnen, Reinigung und Reparaturen an schwer zugänglichen Gebäudebereichen in Graz und Umgebung." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Graz Höhenarbeiten | Höhenarbeiten in Graz" />
+  <meta property="og:description" content="Fassaden-, Dach-, Dachrinnen-, Reinigungs- und Reparaturarbeiten für Hausverwaltungen, Hotels und Gewerbeobjekte, bei geeigneten Voraussetzungen oft ohne Gerüst." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.pexels.com/photos/35882553/pexels-photo-35882553.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@1,600;1,700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-ink: #182126;
+      --deep-charcoal: #11181C;
+      --steel-grey: #2F3D44;
+      --safety-orange: #E36F1E;
+      --concrete-sand: #D8D0BF;
+      --warm-off-white: #F3F1EA;
+      --muted-text: #5D686F;
+      --light-surface: #FFFFFF;
+      --border-grey: #D7D3C8;
+      --shadow-soft: 0 18px 45px rgba(17, 24, 28, 0.11);
+      --shadow-card: 0 10px 30px rgba(17, 24, 28, 0.08);
+      --radius-lg: 28px;
+      --radius-md: 20px;
+      --radius-sm: 14px;
+      --max-width: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--primary-ink);
+      background: var(--warm-off-white);
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(var(--max-width), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(243, 241, 234, 0.92);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(215, 211, 200, 0.8);
+    }
+
+    .nav {
+      height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      font-size: 1.08rem;
+      white-space: nowrap;
+    }
+
+    .logo-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      background: var(--primary-ink);
+      color: var(--light-surface);
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logo-mark::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 45px;
+      background: var(--safety-orange);
+      transform: rotate(24deg);
+      right: 8px;
+      top: -4px;
+    }
+
+    .logo-mark span {
+      position: relative;
+      z-index: 2;
+      font-size: 0.85rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: var(--muted-text);
+      font-size: 0.92rem;
+      font-weight: 650;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-ink);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .phone-link {
+      font-weight: 800;
+      font-size: 0.94rem;
+      color: var(--primary-ink);
+      white-space: nowrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 0 20px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+      white-space: nowrap;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .button-primary {
+      background: var(--safety-orange);
+      color: var(--deep-charcoal);
+    }
+
+    .button-secondary {
+      background: var(--light-surface);
+      color: var(--primary-ink);
+      border-color: var(--border-grey);
+    }
+
+    .hero {
+      padding: 70px 0 52px;
+      background:
+        radial-gradient(circle at 78% 10%, rgba(227, 111, 30, 0.16), transparent 28%),
+        linear-gradient(180deg, var(--warm-off-white), #ECE7DA);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.03fr 0.97fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.78rem;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--steel-grey);
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 3px;
+      border-radius: 999px;
+      background: var(--safety-orange);
+    }
+
+    h1, h2, h3, p {
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 6.4vw, 4.75rem);
+      line-height: 0.98;
+      letter-spacing: -0.07em;
+      margin-bottom: 24px;
+      max-width: 760px;
+    }
+
+    .accent {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-style: italic;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+    }
+
+    .hero-copy {
+      font-size: 1.16rem;
+      line-height: 1.62;
+      color: var(--muted-text);
+      max-width: 650px;
+      margin-bottom: 28px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 26px;
+    }
+
+    .hero-trust {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .trust-pill {
+      background: rgba(255, 255, 255, 0.68);
+      border: 1px solid var(--border-grey);
+      border-radius: 18px;
+      padding: 14px 15px;
+      font-size: 0.9rem;
+      font-weight: 750;
+      line-height: 1.25;
+    }
+
+    .trust-pill span {
+      display: block;
+      color: var(--safety-orange);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 5px;
+    }
+
+    .hero-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      min-height: 640px;
+      box-shadow: var(--shadow-soft);
+      isolation: isolate;
+      background: var(--deep-charcoal);
+    }
+
+    .hero-card img {
+      width: 100%;
+      height: 640px;
+      object-fit: cover;
+      filter: saturate(0.86) contrast(1.03);
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(17, 24, 28, 0.04), rgba(17, 24, 28, 0.82));
+      z-index: 1;
+    }
+
+    .hero-image-note {
+      position: absolute;
+      left: 22px;
+      right: 22px;
+      bottom: 22px;
+      z-index: 2;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 22px;
+      background: rgba(17, 24, 28, 0.72);
+      backdrop-filter: blur(14px);
+      color: var(--light-surface);
+      padding: 20px;
+    }
+
+    .hero-image-note strong {
+      display: block;
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
+
+    .hero-image-note p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 0.94rem;
+    }
+
+    .section {
+      padding: 86px 0;
+    }
+
+    .section-tight {
+      padding: 60px 0;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 28px;
+      margin-bottom: 38px;
+    }
+
+    .section-header h2 {
+      font-size: clamp(2.1rem, 3.8vw, 2.75rem);
+      line-height: 1.08;
+      letter-spacing: -0.05em;
+      margin-bottom: 0;
+      max-width: 720px;
+    }
+
+    .section-header p {
+      max-width: 410px;
+      color: var(--muted-text);
+      margin-bottom: 0;
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .audience-card,
+    .service-card,
+    .reason-card,
+    .process-card,
+    .faq-item {
+      background: var(--light-surface);
+      border: 1px solid var(--border-grey);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      box-shadow: 0 1px 0 rgba(17, 24, 28, 0.02);
+    }
+
+    .icon-box {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: rgba(227, 111, 30, 0.12);
+      color: var(--safety-orange);
+      margin-bottom: 18px;
+      font-weight: 900;
+    }
+
+    .audience-card h3,
+    .service-card h3,
+    .reason-card h3,
+    .process-card h3 {
+      font-size: 1.12rem;
+      line-height: 1.25;
+      letter-spacing: -0.025em;
+      margin-bottom: 9px;
+    }
+
+    .audience-card p,
+    .service-card p,
+    .reason-card p,
+    .process-card p,
+    .faq-item p {
+      color: var(--muted-text);
+      font-size: 0.96rem;
+      margin-bottom: 0;
+    }
+
+    .service-section {
+      background: var(--primary-ink);
+      color: var(--light-surface);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-section::before {
+      content: "";
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      border-radius: 50%;
+      background: rgba(227, 111, 30, 0.12);
+      right: -180px;
+      top: -180px;
+    }
+
+    .service-section .section-header p {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .services-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      z-index: 2;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.13);
+      color: var(--light-surface);
+      min-height: 240px;
+    }
+
+    .service-card p {
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .service-card ul {
+      padding-left: 18px;
+      margin: 18px 0 0;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 0.92rem;
+    }
+
+    .wide-feature {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 30px;
+      align-items: stretch;
+      background: var(--light-surface);
+      border: 1px solid var(--border-grey);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+
+    .wide-feature img {
+      width: 100%;
+      height: 100%;
+      min-height: 450px;
+      object-fit: cover;
+      filter: saturate(0.82) contrast(1.03);
+    }
+
+    .wide-content {
+      padding: 44px;
+      align-self: center;
+    }
+
+    .wide-content h2 {
+      font-size: clamp(2rem, 3.4vw, 2.65rem);
+      line-height: 1.08;
+      letter-spacing: -0.05em;
+      margin-bottom: 18px;
+    }
+
+    .wide-content p {
+      color: var(--muted-text);
+      margin-bottom: 24px;
+    }
+
+    .check-list {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .check-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-weight: 650;
+      color: var(--primary-ink);
+    }
+
+    .check-list li::before {
+      content: "✓";
+      flex: 0 0 24px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(227, 111, 30, 0.14);
+      color: var(--safety-orange);
+      display: grid;
+      place-items: center;
+      font-size: 0.8rem;
+      font-weight: 900;
+      margin-top: 1px;
+    }
+
+    .reasons-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .qualification-strip {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1px;
+      background: var(--border-grey);
+      border: 1px solid var(--border-grey);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-top: 28px;
+    }
+
+    .qualification {
+      background: var(--concrete-sand);
+      padding: 24px;
+    }
+
+    .qualification strong {
+      display: block;
+      font-size: 1.35rem;
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .qualification span {
+      color: var(--steel-grey);
+      font-weight: 650;
+      font-size: 0.92rem;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .project-card {
+      background: var(--light-surface);
+      border: 1px solid var(--border-grey);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      filter: saturate(0.8) contrast(1.04);
+    }
+
+    .project-body {
+      padding: 22px;
+    }
+
+    .project-body span {
+      display: inline-block;
+      color: var(--safety-orange);
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 850;
+      margin-bottom: 10px;
+    }
+
+    .project-body h3 {
+      font-size: 1.12rem;
+      letter-spacing: -0.03em;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+
+    .project-body p {
+      color: var(--muted-text);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    .process-section {
+      background: #ECE7DA;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .process-number {
+      display: inline-grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--primary-ink);
+      color: var(--light-surface);
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+      min-height: 480px;
+      background: var(--steel-grey);
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      filter: saturate(0.78) contrast(1.05);
+    }
+
+    .about-panel {
+      position: absolute;
+      left: 22px;
+      right: 22px;
+      bottom: 22px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+    }
+
+    .about-panel strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .about-panel p {
+      color: var(--muted-text);
+      margin: 0;
+      font-size: 0.92rem;
+    }
+
+    .about-copy h2 {
+      font-size: clamp(2rem, 3.8vw, 2.75rem);
+      line-height: 1.08;
+      letter-spacing: -0.05em;
+      margin-bottom: 18px;
+    }
+
+    .about-copy p {
+      color: var(--muted-text);
+      margin-bottom: 20px;
+    }
+
+    .language-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .tag {
+      display: inline-flex;
+      padding: 9px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border-grey);
+      background: var(--light-surface);
+      font-weight: 750;
+      font-size: 0.88rem;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .faq-item h3 {
+      font-size: 1.05rem;
+      letter-spacing: -0.025em;
+      margin-bottom: 8px;
+    }
+
+    .contact-section {
+      background: var(--deep-charcoal);
+      color: var(--light-surface);
+      padding: 88px 0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .contact-copy h2 {
+      font-size: clamp(2.2rem, 4.8vw, 3.6rem);
+      line-height: 1.02;
+      letter-spacing: -0.06em;
+      margin-bottom: 18px;
+    }
+
+    .contact-copy p {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 1.06rem;
+      margin-bottom: 26px;
+    }
+
+    .contact-methods {
+      display: grid;
+      gap: 12px;
+    }
+
+    .contact-method {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .contact-method span:first-child {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: rgba(227, 111, 30, 0.16);
+      color: var(--safety-orange);
+      font-weight: 900;
+    }
+
+    .contact-method strong {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .contact-method a,
+    .contact-method small {
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .contact-form {
+      background: var(--light-surface);
+      color: var(--primary-ink);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .field {
+      display: grid;
+      gap: 7px;
+      margin-bottom: 14px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--steel-grey);
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid var(--border-grey);
+      border-radius: 14px;
+      padding: 13px 14px;
+      font: inherit;
+      background: #FBFAF6;
+      color: var(--primary-ink);
+      outline: none;
+    }
+
+    textarea {
+      min-height: 136px;
+      resize: vertical;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--safety-orange);
+      box-shadow: 0 0 0 4px rgba(227, 111, 30, 0.12);
+    }
+
+    .form-note {
+      color: var(--muted-text);
+      font-size: 0.88rem;
+      margin: 14px 0 0;
+    }
+
+    .footer {
+      background: var(--deep-charcoal);
+      color: rgba(255, 255, 255, 0.72);
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 30px 0;
+      font-size: 0.9rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .footer strong {
+      color: var(--light-surface);
+    }
+
+    .mobile-only {
+      display: none;
+    }
+
+    @media (max-width: 1040px) {
+      .nav-links,
+      .phone-link {
+        display: none;
+      }
+
+      .hero-grid,
+      .wide-feature,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card,
+      .hero-card img {
+        min-height: 520px;
+        height: 520px;
+      }
+
+      .audience-grid,
+      .qualification-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .services-grid,
+      .reasons-grid,
+      .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        width: min(100% - 28px, var(--max-width));
+      }
+
+      .nav {
+        height: 68px;
+      }
+
+      .logo {
+        font-size: 0.98rem;
+      }
+
+      .nav-actions .button {
+        display: none;
+      }
+
+      .mobile-only {
+        display: inline-flex;
+      }
+
+      .hero {
+        padding: 44px 0 36px;
+      }
+
+      h1 {
+        font-size: clamp(2.42rem, 13vw, 3.35rem);
+      }
+
+      .hero-copy {
+        font-size: 1.02rem;
+      }
+
+      .hero-ctas .button {
+        width: 100%;
+      }
+
+      .hero-trust,
+      .audience-grid,
+      .services-grid,
+      .reasons-grid,
+      .project-grid,
+      .process-grid,
+      .qualification-strip,
+      .faq-grid,
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card,
+      .hero-card img {
+        min-height: 430px;
+        height: 430px;
+      }
+
+      .section,
+      .contact-section {
+        padding: 62px 0;
+      }
+
+      .section-header {
+        display: block;
+      }
+
+      .section-header p {
+        margin-top: 14px;
+      }
+
+      .wide-content,
+      .contact-form {
+        padding: 24px;
+      }
+
+      .wide-feature img,
+      .about-image,
+      .about-image img {
+        min-height: 360px;
+        height: 360px;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Graz Höhenarbeiten",
+    "description": "Professionelle Höhenarbeiten und Seilzugangstechnik für Fassaden, Dächer, Dachrinnen, Reinigung und Reparaturen an schwer zugänglichen Gebäudebereichen in Graz und Umgebung.",
+    "areaServed": ["Graz", "Graz Umgebung", "Steiermark"],
+    "telephone": "+43 000 000000",
+    "email": "info@graz-hoehenarbeiten.at",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Graz",
+      "addressCountry": "AT"
+    },
+    "serviceType": [
+      "Höhenarbeiten",
+      "Industriekletterer",
+      "Seilzugangstechnik",
+      "Fassadenarbeiten",
+      "Dachrinnenreinigung",
+      "Dachreinigung",
+      "Fensterreinigung in Höhenlagen",
+      "Gebäudewartung"
+    ],
+    "url": "https://www.example.at"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Arbeiten Sie mit Hausverwaltungen und Gewerbeobjekten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Graz Höhenarbeiten unterstützt Hausverwaltungen, Hotels, Eigentümer von Gewerbeimmobilien und Facility-Teams, die sichere und praktische Unterstützung bei schwer zugänglichen Gebäudebereichen benötigen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann die Arbeit oft ohne Gerüst erledigt werden?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In vielen Fällen kann Seilzugangstechnik eine praktische Alternative zum Gerüst sein, vor allem bei gezielten Fassaden-, Dach-, Dachrinnen-, Reinigungs- oder Reparaturarbeiten. Welche Zugangsmethode sicher und geeignet ist, wird nach Einschätzung des Gebäudes und der Aufgabe festgelegt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Regionen werden betreut?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Graz Höhenarbeiten ist in Graz, Graz-Umgebung und ausgewählten Gebieten in der Steiermark tätig. Bei Projekten außerhalb von Graz hängt die Verfügbarkeit von Art der Arbeit, Zugangssituation und Projektumfang ab."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Höhenarbeiten werden durchgeführt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Typische Arbeiten umfassen Fassadenreparaturen und Fassadenreinigung, Dachrinnenreinigung und Reparaturen, Dachreinigung, kleinere Unterstützung bei Dachundichtheiten, Fensterreinigung in Höhenlagen und Gebäudewartung, wenn der Zugang mit üblichen Methoden schwierig ist."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann das Gebäude vor dem Angebot besichtigt werden?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Bei den meisten Aufträgen ist eine erste Einschätzung sinnvoll, damit Gebäude, Zugangspunkte, Sicherheitsanforderungen und genauer Arbeitsumfang vor einem klaren Angebot beurteilt werden können."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Informationen sollen bei der Anfrage mitgeschickt werden?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bitte senden Sie den Gebäudestandort, eine kurze Beschreibung des Problems, Fotos falls vorhanden, die ungefähre Höhe oder Etage, bekannte Zugangsinformationen und die Dringlichkeit der Arbeit."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav" aria-label="Hauptnavigation">
+      <a class="logo" href="#top" aria-label="Graz Höhenarbeiten Startseite">
+        <span class="logo-mark"><span>GH</span></span>
+        <span>Graz Höhenarbeiten</span>
+      </a>
+      <nav class="nav-links" aria-label="Primäre Navigation">
+        <a href="#services">Leistungen</a>
+        <a href="#why-us">Warum wir</a>
+        <a href="#process">Ablauf</a>
+        <a href="#about">Über Balint</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="phone-link" href="tel:+43000000000">+43 000 000000</a>
+        <a class="button button-primary" href="#contact">Anfrage stellen</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Graz und Umgebung</div>
+          <h1 id="hero-heading">Spezialisierte Höhenarbeiten für schwer zugängliche <span class="accent">Gebäudebereiche</span></h1>
+          <p class="hero-copy">Fassaden-, Dach-, Dachrinnen-, Reinigungs- und Reparaturarbeiten für Hausverwaltungen, Hotels und Gewerbeobjekte in Graz und Umgebung, sicher, effizient und bei geeigneten Voraussetzungen oft ohne Gerüst.</p>
+          <div class="hero-ctas">
+            <a class="button button-primary" href="#contact">Besichtigung anfragen</a>
+            <a class="button button-secondary" href="#services">Leistungen ansehen</a>
+            <a class="button button-secondary mobile-only" href="tel:+43000000000">Jetzt anrufen: +43 000 000000</a>
+          </div>
+          <div class="hero-trust" aria-label="Wichtige Vertrauenspunkte">
+            <div class="trust-pill"><span>Zugang</span>Seilzugangstechnik und Höhenarbeiten</div>
+            <div class="trust-pill"><span>Kunden</span>Hausverwaltungen, Hotels und Gewerbeobjekte</div>
+            <div class="trust-pill"><span>Fokus</span>Sichere, praktische und verlässliche Ausführung</div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="https://images.pexels.com/photos/35882553/pexels-photo-35882553.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Höhenarbeiter bei Wartungsarbeiten an einer Gebäudefassade" />
+          <div class="hero-image-note">
+            <strong>Spezialist für schwer zugängliche Gebäudebereiche</strong>
+            <p>Fassaden-, Dach-, Dachrinnen- und Reinigungsarbeiten können bei geeigneten Gebäuden und Aufgaben oft mit Seilzugangstechnik beurteilt und ausgeführt werden.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight" aria-labelledby="audience-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="audience-heading">Für Menschen, die Gebäude zuverlässig betreuen müssen</h2>
+          <p>Unterstützung für Auftraggeber, die sichere, klare und praktische Lösungen für Wartungsarbeiten an schwer zugänglichen Gebäudebereichen benötigen.</p>
+        </div>
+        <div class="audience-grid">
+          <article class="audience-card">
+            <div class="icon-box">01</div>
+            <h3>Hausverwaltungen</h3>
+            <p>Unterstützung bei Fassaden-, Dach-, Dachrinnen- und Reinigungsarbeiten an betreuten Wohn- und Mischobjekten.</p>
+          </article>
+          <article class="audience-card">
+            <div class="icon-box">02</div>
+            <h3>Hotels</h3>
+            <p>Außenreinigung und Wartung in Höhenlagen, geplant mit Rücksicht auf Gäste, Betrieb und möglichst geringe Störung.</p>
+          </article>
+          <article class="audience-card">
+            <div class="icon-box">03</div>
+            <h3>Gewerbeimmobilien</h3>
+            <p>Gezielte Wartung für Gebäude, bei denen ein Gerüst unnötig, langsam oder störend sein kann.</p>
+          </article>
+          <article class="audience-card">
+            <div class="icon-box">04</div>
+            <h3>Facility-Teams</h3>
+            <p>Verlässliche Unterstützung für geplante oder einmalige Wartungsarbeiten, bei denen sicherer Zugang entscheidend ist.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section service-section" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="services-heading">Höhenarbeiten für Fassade, Dach, Dachrinne und Reinigung</h2>
+          <p>Praktische Arbeiten an Gebäudebereichen, die hoch, eng, verwinkelt oder mit herkömmlichen Methoden nur aufwendig erreichbar sind.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="icon-box">F</div>
+            <h3>Fassadenarbeiten und Reparaturen</h3>
+            <p>Gezielte Unterstützung für schwer zugängliche Fassadenbereiche, darunter Reinigung, kleine Reparaturen, Verputzarbeiten, Anstrich und Sanierung, wenn passend.</p>
+            <ul><li>Lockerer Putz und beschädigte Fassadenbereiche</li><li>Fassadenwäsche und Fassadenreinigung</li><li>Wartung ohne komplettes Gerüst, wenn geeignet</li></ul>
+          </article>
+          <article class="service-card">
+            <div class="icon-box">G</div>
+            <h3>Dachrinnenreinigung und Reparatur</h3>
+            <p>Reinigung, Reparatur und Unterstützung bei der Montage von Dachrinnen, die hoch, ungünstig gelegen oder schwer erreichbar sind.</p>
+            <ul><li>Verstopfte und überlaufende Dachrinnen</li><li>Vorbeugung gegen Leckagen und Folgeschäden</li><li>Saisonale Wartung vor Starkregen oder Winter</li></ul>
+          </article>
+          <article class="service-card">
+            <div class="icon-box">R</div>
+            <h3>Dachreinigung und kleinere Reparaturen</h3>
+            <p>Praktische Unterstützung bei Dachreinigung, Entfernung von Verschmutzungen und kleineren Arbeiten im Zusammenhang mit Undichtheiten, wenn Spezialzugang erforderlich ist.</p>
+            <ul><li>Gezielte Dachwartung</li><li>Unterstützung bei kleineren Undichtheiten</li><li>Schwer zugängliche Dachbereiche</li></ul>
+          </article>
+          <article class="service-card">
+            <div class="icon-box">W</div>
+            <h3>Fensterreinigung in Höhenlagen</h3>
+            <p>Professionelle Fensterreinigung für Hotels, Gewerbeobjekte und verwaltete Gebäude mit schwieriger Zugangssituation.</p>
+            <ul><li>Hohe Fenster und Innenhöfe</li><li>Glasflächen bei Gewerbeobjekten</li><li>Gepflegte Gebäudeaußenflächen</li></ul>
+          </article>
+          <article class="service-card">
+            <div class="icon-box">A</div>
+            <h3>Seilzugangstechnik und Industrieklettern</h3>
+            <p>Spezialistischer Zugang für enge, hohe oder ungünstige Bereiche, wenn Leiter, Arbeitsbühne oder Gerüst nicht die praktischste Lösung sind.</p>
+            <ul><li>Professionelle Seilzugangsmethoden</li><li>Zertifizierte Werkzeuge und Ausrüstung</li><li>Sichere Zugangsplanung</li></ul>
+          </article>
+          <article class="service-card">
+            <div class="icon-box">M</div>
+            <h3>Gebäudewartung in Höhenlagen</h3>
+            <p>Unterstützung bei praktischen Wartungsarbeiten, die oft verschoben werden, weil der Zugang schwierig, hoch oder aufwendig ist.</p>
+            <ul><li>Kleine Reparaturen</li><li>Unterstützung bei Begutachtungen</li><li>Schwer zugängliche Reinigungsarbeiten</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="scaffolding-heading">
+      <div class="container wide-feature">
+        <div>
+          <img src="https://images.pexels.com/photos/34581860/pexels-photo-34581860.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Industriekletterer beim Anstrich einer hohen Gebäudefassade" />
+        </div>
+        <div class="wide-content">
+          <div class="eyebrow">Praktische Zugangslösung</div>
+          <h2 id="scaffolding-heading">Wenn ein Gerüst für gezielte Arbeiten zu aufwendig ist</h2>
+          <p>Bei vielen kleinen oder gezielten Wartungsarbeiten bedeutet ein komplettes Gerüst zusätzliche Kosten, Wartezeit und Störung. Wenn Gebäude und Aufgabe geeignet sind, kann Seilzugangstechnik eine effiziente Möglichkeit sein, den betroffenen Bereich zu prüfen, zu reinigen oder zu reparieren.</p>
+          <ul class="check-list">
+            <li>Sinnvoll für gezielte Fassaden-, Dach- und Dachrinnenarbeiten</li>
+            <li>Kann Störungen für Bewohner, Gäste und Mieter reduzieren</li>
+            <li>Ermöglicht die Einschätzung schwieriger Bereiche, bevor aus kleinen Problemen größere werden</li>
+            <li>Die Eignung wird ehrlich geprüft, bevor der Auftrag bestätigt wird</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight" id="why-us" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="why-heading">Warum Hausverwaltungen und Gebäudeverantwortliche sicher anfragen können</h2>
+          <p>Klare Qualifikationen, relevante Gebäudeerfahrung und praktische Kommunikation helfen Auftraggebern einzuschätzen, ob Graz Höhenarbeiten für die Aufgabe passt.</p>
+        </div>
+        <div class="reasons-grid">
+          <article class="reason-card">
+            <div class="icon-box">✓</div>
+            <h3>Qualifizierte Erfahrung bei Höhenarbeiten</h3>
+            <p>Industrieklettererfahrung mit OKJ-Industriekletterer-Qualifikation und IRATA Level 1 Qualifikation.</p>
+          </article>
+          <article class="reason-card">
+            <div class="icon-box">✓</div>
+            <h3>Gebäudebezogene Leistungen</h3>
+            <p>Erfahrung mit Fassaden, Dächern, Dachrinnen, Reinigungs- und Reparaturarbeiten, nicht nur mit allgemeinem Klettern.</p>
+          </article>
+          <article class="reason-card">
+            <div class="icon-box">✓</div>
+            <h3>Professionelle Zugangsausrüstung</h3>
+            <p>Einsatz professioneller Petzl-Ausrüstung und zertifizierter Seilzugangswerkzeuge, mit Sicherheit als Grundlage der Arbeit.</p>
+          </article>
+          <article class="reason-card">
+            <div class="icon-box">✓</div>
+            <h3>Relevanter Projekthintergrund</h3>
+            <p>Erfahrung mit Hausverwaltungen, Hotels, Universitätsgebäuden, größeren Unternehmen und Infrastrukturprojekten.</p>
+          </article>
+          <article class="reason-card">
+            <div class="icon-box">✓</div>
+            <h3>Klare Kommunikation</h3>
+            <p>Praktische Erklärung, was möglich ist, welche Zugangsmethode geeignet ist und wie der nächste Schritt aussieht.</p>
+          </article>
+          <article class="reason-card">
+            <div class="icon-box">✓</div>
+            <h3>Lokal in Graz verankert</h3>
+            <p>Fokus auf Graz und Umgebung, mit Leistungen für österreichische Immobilien- und Gewerbekunden.</p>
+          </article>
+        </div>
+        <div class="qualification-strip" aria-label="Qualifikationen und Erfahrung">
+          <div class="qualification"><strong>OKJ</strong><span>Industriekletterer-Qualifikation</span></div>
+          <div class="qualification"><strong>IRATA L1</strong><span>Seilzugangstechnik-Qualifikation</span></div>
+          <div class="qualification"><strong>Petzl</strong><span>Professionelle Zugangsausrüstung</span></div>
+          <div class="qualification"><strong>HU, EN, DE</strong><span>Kommunikationssprachen</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="projects-heading">Typische Arbeiten an schwer zugänglichen Gebäudebereichen</h2>
+          <p>Typische Aufgaben sind Fassadenwartung, Reinigung in Höhenlagen und Arbeiten an Gebäudeaußenflächen, wenn der normale Zugang schwierig ist.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="https://images.pexels.com/photos/34581860/pexels-photo-34581860.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Fassadenanstrich mit Seilzugangstechnik" />
+            <div class="project-body">
+              <span>Fassadenarbeiten</span>
+              <h3>Gezielte Fassadenreparatur und Beschichtung</h3>
+              <p>Für beschädigte, verwitterte oder schwer zugängliche Fassadenbereiche, die repariert, gereinigt oder beschichtet werden müssen.</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="https://images.pexels.com/photos/34153042/pexels-photo-34153042.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Fensterreinigung in Höhenlagen by rope access" />
+            <div class="project-body">
+              <span>Reinigung in Höhenlagen</span>
+              <h3>Fenster- und Glasreinigung in Höhenlagen</h3>
+              <p>Für Hotels, Gewerbeobjekte und verwaltete Gebäude, bei denen Fenster oder Glasflächen schwer sicher erreichbar sind.</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="https://images.pexels.com/photos/35882553/pexels-photo-35882553.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Gebäudewartung außen mit Seilzugangstechnik" />
+            <div class="project-body">
+              <span>Wartung</span>
+              <h3>Wartung schwer zugänglicher Außenbereiche</h3>
+              <p>Für Fassaden-, Dachrand-, Dachrinnen- und Außenwartungsarbeiten, die Spezialzugang und sorgfältige Planung benötigen.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="process" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="process-heading">Ein einfacher Ablauf für Hausverwaltungen und Gewerbekunden</h2>
+          <p>Der Ablauf hält den nächsten Schritt klar, von der ersten Anfrage über Einschätzung und Angebot bis zur sicheren Ausführung und Fertigstellung.</p>
+        </div>
+        <div class="process-grid">
+          <article class="process-card">
+            <div class="process-number">1</div>
+            <h3>Anfrage senden</h3>
+            <p>Senden Sie nach Möglichkeit Standort, Problem, Fotos und gewünschte Zeitplanung.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-number">2</div>
+            <h3>Erste Einschätzung</h3>
+            <p>Die Zugangssituation und praktische Möglichkeiten werden geprüft, bevor eine Methode festgelegt wird.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-number">3</div>
+            <h3>Besichtigung oder Angebot</h3>
+            <p>Bei passenden Aufträgen kann ein klares Angebot mit praktischem Ablauf erstellt werden.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-number">4</div>
+            <h3>Ausführung der Arbeit</h3>
+            <p>Die Arbeit wird mit geeigneten Höhenzugangsmethoden und professioneller Ausrüstung ausgeführt.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-number">5</div>
+            <h3>Abschluss</h3>
+            <p>Die Arbeit kann bei Bedarf mit Fotos für Eigentümer, Hausverwaltung oder interne Unterlagen dokumentiert werden.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="https://images.pexels.com/photos/35882553/pexels-photo-35882553.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Höhenarbeiter an einer Wohnhausfassade" />
+          <div class="about-panel">
+            <strong>Professionelle Arbeiten mit Spezialzugang</strong>
+            <p>Spezialisierte Höhenarbeiten an Gebäudeaußenflächen mit Fokus auf sicheren Zugang, saubere Ausführung und praktische Ergebnisse.</p>
+          </div>
+        </div>
+        <div class="about-copy">
+          <div class="eyebrow">Über Balint</div>
+          <h2 id="about-heading">Erfahrene Unterstützung bei Höhenarbeiten durch einen praktischen lokalen Spezialisten</h2>
+          <p>Balint ist der Spezialist hinter Graz Höhenarbeiten. Er unterstützt Hausverwaltungen, Hotels und Gewerbekunden mit praktischen Höhenarbeiten, wenn der sichere Zugang die zentrale Herausforderung ist.</p>
+          <p>Sein Hintergrund umfasst Industrieklettererfahrung in Ungarn und Österreich, mit Arbeiten in Fassadensanierung, Dach- und Dachrinnenwartung, Reinigung, Reparatur, Hochspannungsmast-Projekten sowie Baum- und Motorsägearbeiten.</p>
+          <p>Balint verfügt über eine OKJ-Industriekletterer-Qualifikation und eine IRATA Level 1 Qualifikation. Er arbeitet mit professioneller Seilzugangsausrüstung und legt Wert auf klare Kommunikation, sichere Ausführung und praktische Lösungen für schwer zugängliche Gebäudebereiche.</p>
+          <div class="language-row">
+            <span class="tag">Graz und Umgebung</span>
+            <span class="tag">Hausverwaltungen</span>
+            <span class="tag">Hotels</span>
+            <span class="tag">Commercial buildings</span>
+            <span class="tag">Ungarisch, Englisch, Deutsch</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="faq-heading">Häufige Fragen vor einer Anfrage für Höhenarbeiten</h2>
+          <p>Praktische Antworten für Hausverwaltungen, Hotels und Gewerbekunden, die Fassaden-, Dach-, Dachrinnen-, Reinigungs- oder Reparaturarbeiten in schwer zugänglichen Bereichen planen.</p>
+        </div>
+        <div class="faq-grid">
+          <article class="faq-item">
+            <h3>Arbeiten Sie mit Hausverwaltungen und Gewerbeobjekten?</h3>
+            <p>Ja. Graz Höhenarbeiten unterstützt Hausverwaltungen, Hotels, Eigentümer von Gewerbeimmobilien und Facility-Teams, die sichere und praktische Unterstützung bei schwer zugänglichen Gebäudebereichen benötigen.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Kann die Arbeit oft ohne Gerüst erledigt werden?</h3>
+            <p>In vielen Fällen kann Seilzugangstechnik eine praktische Alternative zum Gerüst sein, vor allem bei gezielten Fassaden-, Dach-, Dachrinnen-, Reinigungs- oder Reparaturarbeiten. Welche Zugangsmethode sicher und geeignet ist, wird nach Einschätzung des Gebäudes und der Aufgabe festgelegt.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Welche Regionen werden betreut?</h3>
+            <p>Graz Höhenarbeiten ist in Graz, Graz-Umgebung und ausgewählten Gebieten in der Steiermark tätig. Bei Projekten außerhalb von Graz hängt die Verfügbarkeit von Art der Arbeit, Zugangssituation und Projektumfang ab.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Welche Höhenarbeiten werden durchgeführt?</h3>
+            <p>Typische Arbeiten umfassen Fassadenreparaturen und Fassadenreinigung, Dachrinnenreinigung und Reparaturen, Dachreinigung, kleinere Unterstützung bei Dachundichtheiten, Fensterreinigung in Höhenlagen und Gebäudewartung, wenn der Zugang mit üblichen Methoden schwierig ist.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Kann das Gebäude vor dem Angebot besichtigt werden?</h3>
+            <p>Ja. Bei den meisten Aufträgen ist eine erste Einschätzung sinnvoll, damit Gebäude, Zugangspunkte, Sicherheitsanforderungen und genauer Arbeitsumfang vor einem klaren Angebot beurteilt werden können.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Welche Informationen sollen bei der Anfrage mitgeschickt werden?</h3>
+            <p>Bitte senden Sie den Gebäudestandort, eine kurze Beschreibung des Problems, Fotos falls vorhanden, die ungefähre Höhe oder Etage, bekannte Zugangsinformationen und die Dringlichkeit der Arbeit.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <div class="eyebrow">Einschätzung anfragen</div>
+          <h2 id="contact-heading">Gibt es ein schwer zugängliches Gebäudethema in Graz?</h2>
+          <p>Senden Sie eine kurze Nachricht mit Standort, Fotos und Problem. Sie erhalten eine praktische Einschätzung, ob Seilzugangstechnik oder eine andere Methode geeignet ist.</p>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <span>T</span>
+              <div><strong>Telefon</strong><a href="tel:+43000000000">+43 000 000000</a></div>
+            </div>
+            <div class="contact-method">
+              <span>E</span>
+              <div><strong>E-Mail</strong><a href="mailto:info@graz-hoehenarbeiten.at">info@graz-hoehenarbeiten.at</a></div>
+            </div>
+            <div class="contact-method">
+              <span>L</span>
+              <div><strong>Einzugsgebiet</strong><small>Graz, Umgebung und Steiermark, sofern passend</small></div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" aria-label="Anfrageformular">
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Ihr Name" />
+            </div>
+            <div class="field">
+              <label for="company">Firma oder Objekt</label>
+              <input id="company" name="company" type="text" placeholder="Firma / Gebäudename" />
+            </div>
+            <div class="field">
+              <label for="email">E-Mail</label>
+              <input id="email" name="email" type="email" placeholder="name@example.at" />
+            </div>
+            <div class="field">
+              <label for="phone">Telefon</label>
+              <input id="phone" name="phone" type="tel" placeholder="+43 ..." />
+            </div>
+            <div class="field">
+              <label for="service">Art der Arbeit</label>
+              <select id="service" name="service">
+                <option>Fassadenarbeiten or repair</option>
+                <option>Dachrinnenreinigung oder Reparatur</option>
+                <option>Dachreinigung oder kleine Reparatur</option>
+                <option>Fensterreinigung in Höhenlagen</option>
+                <option>Allgemeine Gebäudewartung in Höhenlagen</option>
+                <option>Noch unsicher</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="location">Gebäudestandort</label>
+              <input id="location" name="location" type="text" placeholder="Graz, Bezirk oder Ort in der Nähe" />
+            </div>
+            <div class="field full">
+              <label for="message">Was soll eingeschätzt werden?</label>
+              <textarea id="message" name="message" placeholder="Beschreiben Sie das Problem, die Zugangssituation, Höhe, Dringlichkeit und ob Fotos vorhanden sind."></textarea>
+            </div>
+          </div>
+          <button class="button button-primary" type="button">Anfrage senden</button>
+          <p class="form-note">Bitte senden Sie Fotos mit, sofern vorhanden. Bei dringenden Schäden oder zeitkritischen Themen rufen Sie bitte direkt an.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div><strong>Graz Höhenarbeiten</strong> · Specialist height work for buildings in Graz und Umgebung</div>
+      <div>Impressum · Datenschutz · Cookie-Einstellungen</div>
+    </div>
+  </footer>
+</body>
+</html>
