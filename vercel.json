@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/en",
+      "destination": "/balint_en.html"
+    },
+    {
+      "source": "/at",
+      "destination": "/balint_at.html"
+    }
+  ]
+}
